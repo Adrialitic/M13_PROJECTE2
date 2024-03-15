@@ -1,0 +1,32 @@
+Colores:
+Principal: La aplicación se va a dividir en dos colores en referencia a los dos hemisferios del cerebro, se han buscado colores cálidos pero no muy luminosos para que sean fáciles de ver. 
+Secundario: Tonos anaranjados para texto, con el fin de mantener cierta coherencia con las tonalidades empleadas y el verde para botones que deben ser pulsados, para que parezca todo intuitivo.
+
+Tipografía:
+Fuente principal: Arial.
+
+Tamaños de texto:
+Encabezados: 24px - 36px
+Cuerpo de texto: 16px - 18px
+Texto pequeño: 12px - 14px
+
+
+Iconografía:
+Utilizados iconos simples y claros que sean fácilmente reconocibles por los usuarios,al igual que la mascota de la app, un cerebro haciendo ejercicio, para apuntar a gente que busca hacer ejercicio cerebral.
+
+Espacios y Márgenes:
+Se intentará dentro de lo que sea posible según el diseño un espacio uniforme entre los elementos para una apariencia ordenada y fácil de navegar.
+Los márgenes serán generosos alrededor de los elementos para evitar la sensación de hacinamiento. 
+Añadir también botones grandes y fáciles de pulsar e identificar.
+
+Diseño de Interfaz:
+Minimalismo: Se ha optado por un diseño limpio y minimalista para evitar la sobrecarga visual.
+Usabilidad: Priorizada también la usabilidad y la accesibilidad, asegurando que los elementos y funciones sean fácilmente comprensibles para los usuarios.
+Consistencia: Se ha mantenido una apariencia y comportamiento consistentes en toda la aplicación para una experiencia de usuario coherente.
+
+Accesibilidad:
+Se garantiza que la aplicación sea accesible para todos los usuarios.
+Se usa un contraste adecuado entre colores de fondo y texto para una legibilidad óptima.
+
+Adaptabilidad:
+Diseñar la aplicación para ser adaptable a diferentes tamaños de pantalla y dispositivos, incluidos teléfonos móviles y tabletas.
