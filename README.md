@@ -8,3 +8,11 @@ Listado de cambios:
 15/03/2024
 
 Actualizados los planos del proyecto con el Mockup y la guía de estilos.
+
+18/03/2024
+
+Realizado el inicio de la aplicación
+
+20/03/2024
+
+FrontEnd del login y register terminados
