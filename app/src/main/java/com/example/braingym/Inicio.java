@@ -67,7 +67,6 @@ public class Inicio extends Activity {
                 startActivity(intent);
             }
         });
-
     }
 
     private void AnimacionUno(){
