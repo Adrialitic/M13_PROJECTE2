@@ -38,7 +38,7 @@ public class Iniciosesion extends Activity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Iniciosesion.this, Menu.class);
+                Intent intent = new Intent(Iniciosesion.this, MenuPrincipal.class);
                 startActivity(intent);
             }
         });

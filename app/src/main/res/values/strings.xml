@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Braingym</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_perfil">Perfil</string>
 </resources>

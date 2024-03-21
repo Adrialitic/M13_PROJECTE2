@@ -1,69 +1,60 @@
 package com.example.braingym;
 
+
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
-import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-public class Inicio extends Activity {
+import androidx.appcompat.widget.Toolbar;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MenuPrincipal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inicio);
+        setContentView(R.layout.activity_menuprincipal);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         AnimacionUno();
         AnimacionDos();
 
-        Button iniciarSesionButton = findViewById(R.id.button);
+        Button aActividades = findViewById(R.id.Actividades);
 
-        iniciarSesionButton.setOnClickListener(new View.OnClickListener() {
+        aActividades.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Inicio.this, Iniciosesion.class);
+                Intent intent = new Intent(MenuPrincipal.this, Actividades.class);
                 startActivity(intent);
             }
         });
 
-        Button registroButton = findViewById(R.id.button2);
+        Button aInformes = findViewById(R.id.Informes);
 
-        registroButton.setOnClickListener(new View.OnClickListener() {
+        aInformes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Inicio.this, Registro.class);
+                Intent intent = new Intent(MenuPrincipal.this, Informes.class);
                 startActivity(intent);
             }
         });
 
-        ImageView imageView = findViewById(R.id.twitter);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/"));
-                startActivity(intent);
-            }
-        });
+        ImageView ASettings = findViewById(R.id.imageView5);
 
-        ImageView imageView2 = findViewById(R.id.insta);
-        imageView2.setOnClickListener(new View.OnClickListener() {
+        ASettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://instagram.com/"));
-                startActivity(intent);
-            }
-        });
-        TextView textView = findViewById(R.id.accesoninja);
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Inicio.this, MenuPrincipal.class);
+                Intent intent = new Intent(MenuPrincipal.this, Configuracion.class);
                 startActivity(intent);
             }
         });
@@ -112,5 +103,27 @@ public class Inicio extends Activity {
         //Se empieza
         animacionDestacar.start();
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_perfil) {
+            Intent intent = new Intent(MenuPrincipal.this, Perfil.class);
+            startActivity(intent);
+            return true;
+        } else if (itemId == R.id.action_menu) {
+            Intent intent = new Intent(MenuPrincipal.this, MenuPrincipal.class);
+            startActivity(intent);
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
+        }
     }
 }

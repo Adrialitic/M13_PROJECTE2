@@ -35,7 +35,19 @@
         </activity>
 
         <activity
-            android:name=".Menu">
+            android:name=".MenuPrincipal">
+        </activity>
+        <activity
+            android:name=".Actividades">
+        </activity>
+        <activity
+            android:name=".Configuracion">
+        </activity>
+        <activity
+            android:name=".Informes">
+        </activity>
+        <activity
+            android:name=".Perfil">
         </activity>
     </application>
 
