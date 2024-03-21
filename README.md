@@ -16,3 +16,7 @@ Realizado el inicio de la aplicación
 20/03/2024
 
 FrontEnd del login y register terminados
+
+21/03/2024
+
+Finalizado la toolbar y el menú principal
