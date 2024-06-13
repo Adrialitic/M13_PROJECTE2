@@ -17,7 +17,12 @@ import androidx.appcompat.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.braingym.Musica.MusicaFondo;
+import com.example.braingym.Musica.Gramola;
+import com.example.braingym.usuarios.Perfil;
+
 public class MenuPrincipal extends AppCompatActivity {
+    MusicaFondo musicaFondo = Gramola.getBackgroundMusic();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

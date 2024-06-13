@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/degradado5"
+    android:id="@+id/linear_layout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="35dp"
+        android:text="Secuencias"
+        android:textAlignment="center"
+        android:textColor="#FFB11B"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_last_word"
+        android:text="Última palabra: "
+        android:layout_width="match_parent"
+        android:layout_height="92sp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/backgroundcuadrado"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/et_new_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insertar palabra"
+        android:inputType="text"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_gravity="center"
+        android:backgroundTint="#9DFF6F"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntuación: 0"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_below="@id/resultTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiempo: 02:00"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_below="@id/scoreTextView"
+        android:layout_centerHorizontal="true"/>
+
+</LinearLayout>

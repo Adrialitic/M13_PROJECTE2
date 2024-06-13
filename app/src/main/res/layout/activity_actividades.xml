@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/degradado">
@@ -12,5 +13,346 @@
         android:background="@drawable/degradado"
         android:elevation="4dp"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="417dp"
+        android:layout_height="748dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="ACTIVIDADES"
+                    android:textAlignment="center"
+                    android:textColor="#FFB11B"
+                    android:textSize="50dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/Acalculomental"
+                    android:layout_width="183dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="#9DFF6F"
+                    android:text="Cálculo mental"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="77dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/calculoicon"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tituloAcalculomental"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:onClick="expandirContenido"
+                    android:text="- - - - - - expandir - - - - - - -"
+                    android:textAlignment="center"
+                    android:background="@drawable/backgroundtransparente"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contenidoAcalculomental"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/Texto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backgroundtransparente"
+                    android:lineSpacingMultiplier="1.1"
+                    android:padding="8dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:text="¡Bienvenido al juego de cálculo mental!\n\n
+Aquí pondrás a prueba tus habilidades matemáticas al resolver rápidamente diferentes operaciones.\n\n
+¡Prepárate para desafiar tu mente y mejorar tus habilidades numéricas!\n\n"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/ApalabrasEncadenadas"
+                    android:layout_width="183dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="#9DFF6F"
+                    android:text="Palabras Encadenadas"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="77dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/encadenadasicon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tituloApalabrasEncadenadas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="expandirContenido2"
+                    android:background="@drawable/backgroundtransparente"
+                    android:text="- - - - - - expandir - - - - - - -"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contenidoaPalabrasEncadenadas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/Texto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.1"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/backgroundtransparente"
+                    android:text="¡Bienvenido al juego de Palabras Encadenadas!\n\n
+En este juego, pondrás a prueba tu léxico encadenando palabras.\n\n
+Recuerda la última letra de cada palabra y piensa una palabra que empiece por esa letra antes de que se acabe el tiempo.\n\n
+¡Diviértete mientras ejercitas tu memoria y tu léxico!\n\n"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="30dp">
+                <Button
+                    android:id="@+id/Asecuencias"
+                    android:layout_width="183dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="#9DFF6F"
+                    android:text="Secuencias"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="77dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/secuenciasicon"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tituloAsecuencias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:onClick="expandirContenido3"
+                    android:background="@drawable/backgroundtransparente"
+                    android:text="- - - - - - expandir - - - - - - -"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contenidoAsecuencias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/Texto3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backgroundtransparente"
+                    android:lineSpacingMultiplier="1.1"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:text="¡Bienvenido al juego de secuencias!\n\n
+                    En este desafío, se te presentarán una serie de colores en una secuencia específica.\n\n
+                    Tu objetivo es identificar y completar la secuencia correcta basándote en un patrón común.\n\n
+                    Demuestra tu habilidad para detectar patrones y continuar secuencias de manera lógica.\n\n
+                    ¡Prepárate para ejercitar tu pensamiento lógico y habilidades de resolución de problemas!"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/ApalabrasDesordenadas"
+                    android:layout_width="183dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="#9DFF6F"
+                    android:text="Palabras desordenadas"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="77dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/desordenadasicon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tituloApalabrasDesordenadas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:onClick="expandirContenido4"
+                    android:text="- - - - - - expandir - - - - - - -"
+                    android:background="@drawable/backgroundtransparente"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contenidoApalabrasDesordenadas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/Texto4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backgroundtransparente"
+                    android:lineSpacingMultiplier="1.1"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:text="¡Bienvenido al juego de palabras desordenadas!\n\n
+En este desafiante juego, se te presentarán letras desordenadas y tu tarea será encontrar la palabra correcta.\n\n
+Demuestra tu habilidad para formar palabras y desenredar las letras en el menor tiempo posible.\n\n
+¡Prepárate para poner a prueba tu vocabulario y habilidades lingüísticas!\n\n"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/white" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

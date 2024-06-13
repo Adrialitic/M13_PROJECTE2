@@ -8,7 +8,12 @@ import android.view.MenuItem;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.braingym.Musica.MusicaFondo;
+import com.example.braingym.Musica.Gramola;
+import com.example.braingym.usuarios.Perfil;
+
 public class Informes extends AppCompatActivity {
+    MusicaFondo musicaFondo = Gramola.getBackgroundMusic();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

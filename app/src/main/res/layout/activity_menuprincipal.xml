@@ -34,8 +34,8 @@
         android:id="@+id/Actividades"
         android:layout_width="183dp"
         android:layout_height="55dp"
-        android:backgroundTint="#9DFF6F"
         android:text="Actividades"
+        android:backgroundTint="#9DFF6F"
         android:textColor="@color/black"
         android:textSize="24dp"
         android:textStyle="bold"
@@ -73,7 +73,7 @@
         app:layout_constraintStart_toEndOf="@+id/Actividades"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.696"
-        app:srcCompat="@drawable/memoramaicon" />
+        app:srcCompat="@drawable/encadenadasicon" />
 
     <ImageView
         android:id="@+id/imageView3"

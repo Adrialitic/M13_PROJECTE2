@@ -13,7 +13,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.braingym.Musica.MusicaFondo;
+import com.example.braingym.Musica.Gramola;
+import com.example.braingym.usuarios.Login;
+import com.example.braingym.usuarios.Register;
+
 public class Inicio extends Activity {
+    MusicaFondo musicaFondo = Gramola.getBackgroundMusic();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +33,7 @@ public class Inicio extends Activity {
         iniciarSesionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Inicio.this, Iniciosesion.class);
+                Intent intent = new Intent(Inicio.this, Login.class);
                 startActivity(intent);
             }
         });
@@ -37,7 +43,7 @@ public class Inicio extends Activity {
         registroButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Inicio.this, Registro.class);
+                Intent intent = new Intent(Inicio.this, Register.class);
                 startActivity(intent);
             }
         });

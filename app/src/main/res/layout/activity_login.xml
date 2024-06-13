@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     android:background="@drawable/degradado"
-    tools:context=".Registro">
+    android:padding="12sp"
+    tools:context=".usuarios.Login">
 
     <TextView
         android:id="@+id/subtitulo"
         android:layout_width="330dp"
         android:layout_height="60dp"
-        android:text="Registro"
+        android:text="Inicio de sesión"
         android:textAlignment="center"
         android:textColor="#FFB11B"
         android:textSize="42sp"
@@ -27,67 +27,40 @@
         android:id="@+id/usernameEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:hint="Nombre de usuario"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/subtitulo" />
-
-    <EditText
-        android:id="@+id/emailEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:hint="Correo electrónico"
+        android:layout_marginTop="196dp"
+        android:hint="Nombre de usuario o Gmail"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/usernameEditText" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
         android:hint="Contraseña"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/emailEditText" />
+        app:layout_constraintTop_toBottomOf="@id/usernameEditText" />
 
     <Button
-        android:id="@+id/RegisterButton"
+        android:id="@+id/loginButton"
         android:layout_width="241dp"
         android:layout_height="61dp"
         android:backgroundTint="#9DFF6F"
-        android:text="Registrarse"
-        android:textColor="@color/black"
+        android:text="Iniciar sesión"
         android:textSize="22sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/passwordEditText"
-        app:layout_constraintVertical_bias="0.153" />
-
-    <TextView
-        android:id="@+id/AlLogin"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="316dp"
-        android:text="¿Ya tienes una cuenta? Inicia sesión aquí"
-        android:textAlignment="center"
-        android:textColor="#0000ff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.912" />
+        app:layout_constraintVertical_bias="0.272" />
 
     <TextView
         android:id="@+id/RegistroGoogle"
@@ -115,5 +88,20 @@
         app:layout_constraintVertical_bias="0.832"
         android:src="@drawable/google"
         />
+
+    <TextView
+        android:id="@+id/AlRegistro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="316dp"
+        android:text="¿No tienes una cuenta? Regístrate aquí"
+        android:textColor="#0000ff"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
