@@ -5,14 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import com.example.braingym.Musica.MusicaFondo;
+import com.example.braingym.Musica.Gramola;
 
 public class MainActivity extends Activity {
-
+    MusicaFondo musicaFondo = Gramola.getBackgroundMusic();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +25,7 @@ public class MainActivity extends Activity {
 
                 finish();
             }
-        }, 1); //Cambiar a 5000 con la app ya acabada
+        }, 5000); //Cambiar a 5000 con la app ya acabada
 
         }
     }

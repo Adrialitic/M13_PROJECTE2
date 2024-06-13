@@ -45,6 +45,7 @@
         android:layout_height="55dp"
         android:backgroundTint="#9DFF6F"
         android:text="Iniciar sesión"
+        android:textStyle="bold"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,6 +59,7 @@
         android:layout_height="50dp"
         android:backgroundTint="#9DFF6F"
         android:text="Registro"
+        android:textStyle="bold"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -145,26 +147,26 @@
 
     <ImageView
         android:id="@+id/insta"
-        android:layout_width="43dp"
-        android:layout_height="40dp"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
         android:src="@drawable/instagram"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintHorizontal_bias="0.731"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.963" />
 
     <ImageView
         android:id="@+id/twitter"
-        android:layout_width="43dp"
-        android:layout_height="40dp"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
         android:src="@drawable/twitter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.23"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.962" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
