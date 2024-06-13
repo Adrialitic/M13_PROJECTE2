@@ -5,20 +5,8 @@ https://docs.google.com/document/d/1MV9P_CZyk5R0FT5h5Y96MSq8JoYXa8c_/edit?usp=sh
 
 Todo el codigo se encuentra en la rama Adri, no se como arreglarlo ya que github no para de darme errores.
 
-Listado de cambios:
+Para ejecutar el .py:
 
-15/03/2024
+python app.py
 
-Actualizados los planos del proyecto con el Mockup y la guía de estilos.
 
-18/03/2024
-
-Realizado el inicio de la aplicación
-
-20/03/2024
-
-FrontEnd del login y register terminados
-
-21/03/2024
-
-Finalizado la toolbar y el menú principal
